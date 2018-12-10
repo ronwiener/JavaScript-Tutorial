@@ -8,70 +8,145 @@
     <link rel="stylesheet" type="text/css" href="01-js-tutorial.css">
     <link img src="../4-assests/javascriptbackgrd.jpg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../CSS Help/1-animate/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1 class="title"><code><i>function</i> learnJavaScript(itsFun)</code></h1>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <header class="animated bounceInDown">
+        <h1 class="title"><pre><code><i>function</i> learnJavaScript(itsFun)</code></pre></h1>
     </header>
 
-<!--Navigation-->    
+<!--Main Navigation Bar-->    
         <div>
         <navbar class="nav">
             <ul>
-                <li><a href="/" class="home"><i class="fa fa-home" style="font-size:60px;color: red;text-shadow:2px 2px 4px #000000;"></i></a></li>
-                <li><a href="#functions">FUNCTIONS</a></li>
+                <li><a href="" class="home"><i class="fa fa-home" style="font-size:60px;color: #8E44AD;text-shadow:2px 2px 4px #000000;"></i></a></li>
+                <li><a href="#functions" class="navlink">FUNCTIONS</a></li>
                 <li><a href="#objects" class="navlink">OBJECTS</a></li>
                 <li><a href="#arrays" class="navlink">ARRAYS</a></li>
                 <li><a href="#loops" class="navlink">LOOPS</a></li>
-                <li><a href="#eagle" class="navlink"><i class="fa fa-eagle" style="font-size:60px;color: red;text-shadow:2px 2px 4px #000000;"></i></a></li>
+                <li><a href="#conditionals" class="navlink">CONDITIONALS</a></li>
+                <li><a href="#footer" class="navlink">CONTACT</a></li>
             </ul>
-        </navbar>
+        </navbar>      
         </div>
-<div class="container">
- 
- <!--Sidebar navagation-->   
-    <div>
-     <sidebar class="side">
+        <section class="description"> 
+          <p class="intro"><span>learnJavaScript</span>  is a tutorial to guide you through the basics of JavaScript.  Browse through the topics, read through the descriptions and study the examples.  Continue on with your education by clicking on the <em>JavaScript Help Links</em> to expand your learning potential.</p>
+        
+        <article class="quote">
+                <i class="fa fa-laptop" style="font-size:60px;color: #8E44AD;text-shadow:2px 2px 4px #000000;"></i>
+            <p><q>Learning never exhausts the mind.</q> -- Leonardo da Vinci</p>
+        </article>
+        </section>
+
+<!--gird layout-->
+<div id="container"> 
+    <div class="sidebarbox">
          <h3>JavaScript Help Links</h3>
+         <div id="sidebar">
          <ul class="sidelinks">
-             <li><a href="">1</a></li>
-             <li><a href="">2</a></li>
-             <li><a href="">3</a></li>
-             <li><a href="">4</a></li>    
+             <li><a href="https://www.elevenfifty.org" target="_blank">Eleven Fifty Academy</a></li><br>
+             <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li><br>
+             <li><a href="https://www.w3schools.com/js/default.asp" target="_blank">w3schools</a></li><br>
+             <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">MDN web docs</a></li><br>
+             <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li><br> 
+             <li><a href="https://www.learn-js.org/" target="_blank">Learn JS</a></li><br> 
+             <li><a href="https://www.javascript.com/" target="_blank">JavaScript.com</a></li><br> 
+             <li><a href="https://www.codecademy.com/learn/introduction-to-javascript" target="_blank">CodeAcademy</a></li>
          </ul>
-         
-     </sidebar>
+         </div>
      </div>
      
 
 <!--Information section-->     
-    <section id="main">
-     <div class="functions">
-         <h3>FUNCTIONS</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="boxa">
+        <a id="functions"></a>
+        
+        <h2>FUNCTIONS</h2>
+        <br />
+            <p>A function is a scripted program designed to perform a particular task.  The function takes in parameters (data) and uses the parameters to perform an output within the body of the function.  The body of the function is contained within { }.  Functions always return a value. In JavaScript, if no return value is specified, the function will return undefined.  A console.log statement will print the result to the terminal.<br /><strong>Function example:<br /><pre><code>function myName(firstName, lastName){<br/> let fullName = firstName + lastName }<br/>return fullName;<br/>}console.log("John", "Doe");<br/></code></pre></strong>
+            </code></p>
+        
      </div>
-     <div class="objects">
-         <h3>OBJECTS</h3>
-         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+<!--end of grid layout-->
+
+     <div class="box box1">
+        <a id="objects"></a>
+        
+        <h2>OBJECTS</h2>
+        <br />
+            <p>Objects are a container that JavaScript uses for storing various types of data.  The data is stored in objects as properties which are called key:value pairs.<br /><strong>Here's an example of the Object structure:<br /><strong><pre><code>var car = {type:"Ford", model:"F-150", color:"Blue"};</code></pre></strong></p>
+           
      </div>
-     <div class="arrays">
-        <h3>ARRAYS</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+     <div class="box">
+        <a id="arrays"></a>
+        
+        <h2>ARRAYS</h2>
+        <br />
+            <p>An array is a variable which can hold more than one value at a time.  If you have lists of items such as sports teams or groceries, storing the data in an array would look like this:<br /><strong><pre><code>var team = ["Colts", "Pacers", "Indy Fuel"];<br>var grocery = ["apples", "oranges", grapes","bananas"]</code></pre></strong><br />Arrays can hold many values under a single variable.  The values can be accessed by referring to an index number starting at position 0.</p>
+           
      </div>
-     <div class="loops">
-        <h3>LOOPS</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-     </div>
-     <div class="eagle">
-        <h3>Eagle</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+     <div class="box box3">
+        <a id="loops"></a>
+        
+        <h2>LOOPS</h2>
+        <br />
+            <p>If you want to run the same code over and over again, then use a loop that can input a different value each time.  There are many different kinds of loops but they basically do the same thing.  The loop will run until a specified condition is met.  An example of a "for loop" is as follows:<br /><strong><pre><code>for(let i = 0; i < code.length; i ++)</code></pre></strong></p>
+         
      </div>    
-    </section> 
- </div> 
+     <div class="box">
+        <a id="conditionals"></a>
+        
+        <h2>CONDITIONALS</h2>
+        <br />
+            <p>Conditional statements in code allow us to make decisions.  The decision process is dependent on the different types of input.  For example, if the weather is cloudy, should you bring an umbrella, wear a raincoat, or stay inside?  Some conditionals can be written as "if/else", "else if", or "switch" statements.  Comparison operators are usually utilized with conditional statements.  Here's an example of a conditional with an "if/else" statement:<br><pre><code>
+                let weather = 75;
+
+                if(weather < 70) {
+                    console.log("Wear a jacket");
+                } else {
+                    console.log("No jacket necessary");
+                }</code></pre><br /></p>
+        </div>       
  
- <!--Footer-->
-    <footer class="myFooter">
-        <p>This is where the footer belongs copyright &copy 2018</p>
+
+<!--Footer-->
+ <section class="footer">
+     <a id="footer"></a>
+    <footer>
+        <p>TELL US ABOUT YOUR LEARNING EXPERIENCE<p>
+        <label>EMAIL:  <input type="email" name="email" value="Email address"></label>
+        <input id="submitButton" type="submit" value="Submit">
+        <br />
+        <p>copyright &copy 2018</p>
     </footer>
+</section>
+
+<script>
+        // When scrolling down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+            } else {
+                document.getElementById("myBtn").style.display = "none";
+            }
+        }
+        
+        // When clicking on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        </script>
+        
+
 </body>
+
 </html>
